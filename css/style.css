@@ -1,0 +1,172 @@
+/* ***GLOBAL LAYOUT SETUP*** */
+* { 
+    box-sizing: border-box;
+  }
+
+
+/* ***HEADING STYLES*** */
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* ***LINK STYLES*** */
+
+.nav a {
+    text-decoration: none;
+    font-style: bold;
+    color: black;
+    padding: 20px 100px;
+}
+
+a:hover {
+    color: orange;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ***SECTION STYLES*** */
+
+.sections {
+    margin: 10px 0;
+}
+
+.main-nav {
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.nav {
+    width: 100%;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+}
+
+.name {
+    font-weight: bold;
+    text-align: center;
+}
+
+.top-links {
+    padding: 10px 0px;
+    background-color: white;
+    margin: 7px;
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+.intro {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px 10px;
+}
+
+.intro p {
+    padding: 10px 30px;
+}
+
+body {
+    line-height: 1.5;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    margin: auto;
+    padding: 10px;
+}
+
+.main-content p {
+    padding: 10px 40px 30px 40px;
+}
+
+/* .contact p {
+    padding: 0 50px;
+} */
+
+
+.wrap {
+    min-height: 100vh;
+}
+
+.main-content {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+.ending {
+    text-align: center;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+.contact li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+.bottom-nav {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+#bottom-name {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#back-to-top {
+    float: right;
+    padding: 10px;
+    margin: 20px 5px;
+    font-size: 17px;
+}
+
+
+.wrapper {
+    display: inline-block;    
+}
+
+#line {
+    width: 90%;
+    margin: auto;
+    border-top: 2px solid red;
+}
+
+.labels li {
+    list-style-type: none;
+}
+
+.info li {
+    list-style-type: none;
+}
+
+.photos {
+    width: 90%;
+}
+
+.ending h2 {
+    margin: 10px auto;
+}
