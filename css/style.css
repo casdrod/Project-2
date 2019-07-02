@@ -3,7 +3,6 @@
     box-sizing: border-box;
   }
 
-
 /* ***HEADING STYLES*** */
 
 h1 {
@@ -13,13 +12,13 @@ h1 {
 h2 {
     font-family: 'Acme', sans-serif;
     text-transform: uppercase;
-    margin: 50px 0;
+    margin: 40px 0;
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif;
+    margin: 30px 0 5px 0;
 }
-
 
 /* ***LINK STYLES*** */
 
@@ -41,8 +40,17 @@ footer a {
 
 /* ***SECTION STYLES*** */
 
-.sections {
-    margin: 10px 0;
+body {
+    line-height: 1.5;
+}
+
+.wrap {
+    min-height: 100vh;
+}
+
+.name {
+    font-weight: bold;
+    text-align: center;
 }
 
 .main-nav {
@@ -58,11 +66,6 @@ footer a {
     margin: 0;
 }
 
-.name {
-    font-weight: bold;
-    text-align: center;
-}
-
 .top-links {
     padding: 10px 0px;
     background-color: white;
@@ -71,7 +74,6 @@ footer a {
     text-transform: uppercase;
     font-size: 20px;
 }
-
 
 .intro {
     text-align: center;
@@ -83,8 +85,28 @@ footer a {
     padding: 10px 30px;
 }
 
-body {
-    line-height: 1.5;
+/* **** MAIN **** */
+
+.main-content {
+    text-align: center;
+    background-color: white;
+}
+
+/* .main-content p {
+    padding: 10px 30px 30px 30px;
+} */
+
+.main-sections {
+    margin: 10px 10px 40px 10px;
+}
+
+.sections {
+    margin: 20px 5px 5px 5px;
+    padding: 0;
+}
+
+.photos {
+    width: 90%;
 }
 
 p {
@@ -92,81 +114,105 @@ p {
     font-size: 17px;
     font-weight: 200;
     margin: auto;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
-.main-content p {
-    padding: 10px 40px 30px 40px;
-}
+/* **** CONTACT **** */
 
-/* .contact p {
-    padding: 0 50px;
-} */
-
-
-.wrap {
-    min-height: 100vh;
-}
-
-.main-content {
+.contact {
     text-align: center;
-    padding: 10px;
-    background-color: white;
-}
-.ending {
-    text-align: center;
-    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 55px;
     background-color: whitesmoke;
 }
 
-.contact li {
-    list-style-type: none;
-    padding-bottom: 10px;
+.contact h2 {
+    width: 100%;
+    padding: 40px 10px 30px 10px;
+    margin: 0;
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
 }
 
-.bottom-nav {
-    list-style-type: none;
-    font-weight: bold;
+.wrapper {
+    width: 60%;
+    margin: 0;
+    overflow: auto;
+    display: inline-block;
+    text-align: center; 
 }
+
+.wrapper li {
+    list-style-type: none;
+}
+
+#phone {
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+#numbers {
+    float: right;
+    font-size: 17px;
+}
+
+#email {
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+#address {
+    float: right;
+    font-size: 17px;
+}
+
+/* **** LINE **** */
+
+#line {
+    width: 90%;
+    margin: auto;
+    border-top: 2px solid lightgrey;
+    background-color: whitesmoke;
+}
+
+/* **** FOOTER **** */
+
+.bottom-nav {
+    font-weight: 200;
+    overflow: auto;
+}
+
 
 #bottom-name {
     float: left;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin: 20px -20px;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
 }
 
 #back-to-top {
     float: right;
     padding: 10px;
-    margin: 20px 5px;
+    margin: 20px 15px 20px 5px;
     font-size: 17px;
 }
 
-
-.wrapper {
-    display: inline-block;    
+footer { 
+    background-color: whitesmoke; 
+    clear: both;
+    padding-bottom: 0;
+    text-align: center;
 }
 
-#line {
-    width: 90%;
-    margin: auto;
-    border-top: 2px solid red;
-}
-
-.labels li {
+.bottom-nav ul {
+    margin: 0;
     list-style-type: none;
 }
 
-.info li {
-    list-style-type: none;
-}
+/* **** MEDIA QUERIES **** */
 
-.photos {
-    width: 90%;
-}
-
-.ending h2 {
-    margin: 10px auto;
-}
