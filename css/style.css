@@ -7,6 +7,7 @@
 
 h1 {
     font-family: 'Open Sans', sans-serif;
+    background-color: whitesmoke;
 }
 
 h2 {
@@ -193,6 +194,7 @@ p {
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
+    font-weight: 500;
 }
 
 #back-to-top {
@@ -200,6 +202,7 @@ p {
     padding: 10px;
     margin: 20px 15px 20px 5px;
     font-size: 17px;
+    font-weight: 600;
 }
 
 footer { 
@@ -214,5 +217,69 @@ footer {
     list-style-type: none;
 }
 
+
 /* **** MEDIA QUERIES **** */
 
+@media (min-width: 768px) {
+
+    .name {
+        margin: 0;
+        padding: 15px;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        background-color: whitesmoke;
+    }
+
+    .nav a {
+        padding: 10px;
+    }
+
+    .profile {
+        float: right;
+        width: 40%;
+    }
+
+    .intro p {
+        float: left;
+        width: 60%;
+        text-align: left;
+    }
+
+    /* ****MAIN SECTIONS**** */
+
+    .sections {
+        width: 47%;
+        margin: 0;
+        overflow: auto;
+        display: inline-block;
+        text-align: center; 
+    }
+
+    .main-sections {
+        position: relative;
+    }
+
+    .contact {
+        clear: both;
+    }
+
+    .contact p {
+        width: 70%;
+        padding-bottom: 2em;
+    }
+
+    .wrapper {
+        width: 30%;
+        padding: 5px;
+    }
+
+    /* ****FLOATS CLEARFIX**** */
+
+    .intro:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
