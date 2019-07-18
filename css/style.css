@@ -13,13 +13,14 @@ h1 {
 h2 {
     font-family: 'Acme', sans-serif;
     text-transform: uppercase;
-    padding: 50px 0;
+    padding: 50px 0 30px 0;
     margin: 0;
+    font-size: 22px;
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif;
-    padding: 30px 0 5px 0;
+    padding: 20px 0 5px 0;
     margin: 0;
 }
 
@@ -29,13 +30,12 @@ h3 {
     text-decoration: none;
     font-weight: 500;
     color: black;
-    padding: 20px 100px;
 }
 
 .name a,
 .main-nav a {
     padding: 10px 15px;
-    display: block;
+    display: inline-block;
     text-align: center;
 }
 
@@ -55,15 +55,14 @@ body {
 }
 
 .name,
-.main-nav,
-.main-nav a {
+.main-nav {
     background-color:rgba(243, 142, 230, 0.13);
 }
 
 .name {
     font-family: 'Cinzel', serif;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
     margin: 0; 
     padding: 20px 0;
@@ -78,21 +77,24 @@ body {
 }
 
 .top-links {
+    display: block;
+    text-align: center;
     margin: 7px;
     font-family: 'Acme', sans-serif;
+    background: white;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .intro {
     text-align: center;
     background-color:rgba(243, 142, 230, 0.13);
-    padding: 50px 10px;
+    padding: 50px 30px;
     border-bottom: 2px solid lightgray;
 }
 
 .intro p {
-    padding: 30px;
+    padding: 20px;
 }
 
 /* **** MAIN **** */
@@ -103,6 +105,7 @@ body {
 
 .main-sections {
     margin: 0 10px 40px 10px;
+    background: white;
 }
 
 .sections {
@@ -119,7 +122,7 @@ p {
     font-size: 17px;
     font-weight: 200;
     margin: auto;
-    padding: 10px 30px;
+    padding: 10px 30px 20px 30px;
 }
 
 /* ****SKILLS**** */
@@ -132,7 +135,7 @@ p {
 }
 
 .skills h2 {
-    padding: 25px 0;
+    padding: 20px 0 10px 0;
 }
 
 .skills ul {
@@ -140,8 +143,7 @@ p {
 }
 
 .skills-items {
-    list-style-type: circle;
-    /* text-align: left; */
+    list-style-type: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     font-weight: 200;
@@ -223,10 +225,6 @@ p {
 
 /* **** FOOTER **** */
 
-.bottom-nav {
-    overflow: auto;
-}
-
 #bottom-name {
     float: left;
     margin: 20px -20px;
@@ -236,7 +234,7 @@ p {
     font-weight: 500;
 }
 
-#back-to-top {
+.back-to-top {
     float: right;
     padding: 10px;
     margin: 20px 15px 20px 5px;
@@ -247,6 +245,8 @@ p {
 }
 
 footer { 
+    width: 95%;
+    margin: auto;
     background-color: white; 
     clear: both;
     padding-bottom: 0;
@@ -258,17 +258,15 @@ footer {
     list-style-type: none;
 }
 
+.footer-links {
+    visibility: hidden;
+}
 
 
 
 /* **** MEDIA QUERIES **** */
 
 @media (min-width: 768px) {
-
-    .container li {
-        display: inline-block;
-        background-color: whitesmoke;
-    }
 
     .name {
         margin: 0;
@@ -281,12 +279,11 @@ footer {
 
     .main-nav a {
         padding: 10px;
-        background-color:rgba(243, 142, 230, 0.062);
     }
 
-    .profile {
-        float: right;
-        width: 40%;
+    .top-links {
+        display: inline-block;
+        background: none;
     }
 
     .intro {
@@ -297,6 +294,12 @@ footer {
         float: left;
         width: 60%;
         text-align: left;
+        padding: 0 20px 0 0;
+    }
+
+    .profile {
+        float: right;
+        width: 40%;
     }
 
     /* ****MAIN SECTIONS**** */
@@ -327,6 +330,28 @@ footer {
         display: inline-block;
     }
 
+    /* ****FOOTER**** */
+
+    .footer-links {
+        float: right;
+    }
+
+    .footer-links li {
+        float: left;
+        display: inline-block;
+        visibility: visible;
+        padding: 10px;
+        margin: 20px 15px 20px 5px;
+        font-family: 'Acme', sans-serif;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+    
     /* ****FLOATS CLEARFIX**** */
 
     .intro:after {
@@ -336,18 +361,15 @@ footer {
     }
 }
 
-
-/* ****DESKTOP**** */
 @media (min-width: 1024px) {
 
     .container {
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
+        padding: 30px;
         background-color:rgba(243, 142, 230, 0.13);
     }
 
     .name {
-        padding: 10px 10px 10px 30px;
+        padding: 10px 10px 10px 10px;
         background-color:rgba(243, 142, 230, 0);
     }
 
@@ -369,17 +391,17 @@ footer {
     .main-nav a {
         margin: 0;
         padding: 0 20px;
-        background-color:rgba(243, 142, 230, 0.041);
+        background: none;
     }
 
     .intro p {
         width: 50%;
-        padding: 10px 10px 10px 20px;
+        padding: 10px;
     }
 
     .intro img {
         width: 40%;
-        padding: 10px 20px;
+        padding: 10px;
     }
 
     /* ****MAIN**** */
@@ -395,6 +417,22 @@ footer {
         overflow: auto;
         display: inline-block;
         text-align: center;
+    }
+
+    /* ****FOOTER**** */
+
+    .footer-links li {
+        float: left;
+        padding: 10px;
+        margin: 20px 15px 20px 5px;
+        font-family: 'Acme', sans-serif;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .back-to-top {
+        display: none;
     }
 
 }
