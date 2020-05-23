@@ -104,13 +104,17 @@ body {
 }
 
 .main-sections {
-    margin: 0 10px 40px 10px;
+    margin: 0 15px;
     background: white;
 }
 
 .sections {
-    margin: 20px 5px 5px 5px;
-    padding: 0;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.sections p {
+    font-size: 14px;
 }
 
 .photos {
@@ -128,7 +132,7 @@ p {
 /* ****SKILLS**** */
 
 .skills {
-    padding: 10px;
+    margin: 10px;
     background-color:rgba(243, 142, 230, 0.13);
     border-top: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
@@ -310,7 +314,7 @@ footer {
 
     .sections {
         width: 47%;
-        margin: 5px;
+        margin: 0;
         overflow: auto;
         display: inline-block;
         text-align: center; 
@@ -413,7 +417,8 @@ footer {
 
     .sections {
         width: 30%;
-        margin: 5px 5px 30px 5px;
+        padding: 0 15px;
+        margin: 0;
         overflow: auto;
         display: inline-block;
         text-align: center;
